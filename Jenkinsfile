@@ -5,12 +5,12 @@ pipeline {
   environment {
     DOCKER_IMAGE = "ddnn2026/flask-docker"
   }
-// bachdangtuan
+
   stages {
     stage("Test") {
       agent {
           docker {
-            image 'python:3.8-slim-buster'
+            image 'python:3.10-buster'
             args '-u 0:0 -v /tmp:/root/.cache'
           }
       }
