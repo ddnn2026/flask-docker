@@ -5,7 +5,7 @@ pipeline {
   environment {
     DOCKER_IMAGE = "ddnn2026/flask-docker"
   }
-//123
+// bachdangtuan
   stages {
     stage("Test") {
       agent {
